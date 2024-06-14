@@ -11,6 +11,7 @@
 		8AF41B5F2C1A571B00ADF011 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF41B5E2C1A571B00ADF011 /* ContentView.swift */; };
 		8AF41B612C1A571F00ADF011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF41B602C1A571F00ADF011 /* Assets.xcassets */; };
 		8AF41B642C1A571F00ADF011 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF41B632C1A571F00ADF011 /* Preview Assets.xcassets */; };
+		8AF41B6C2C1B9F5000ADF011 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8AF41B6B2C1B9F5000ADF011 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF41B6C2C1B9F5000ADF011 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = swiftui_tca_practice;
+			packageProductDependencies = (
+				8AF41B6B2C1B9F5000ADF011 /* ComposableArchitecture */,
+			);
 			productName = swiftui_tca_practice;
 			productReference = 8AF41B592C1A571B00ADF011 /* swiftui_tca_practice.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 8AF41B502C1A571B00ADF011;
+			packageReferences = (
+				8AF41B6A2C1B9F5000ADF011 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 8AF41B5A2C1A571B00ADF011 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8AF41B6A2C1B9F5000ADF011 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8AF41B6B2C1B9F5000ADF011 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AF41B6A2C1B9F5000ADF011 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8AF41B512C1A571B00ADF011 /* Project object */;
 }
