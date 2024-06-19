@@ -20,6 +20,7 @@
 		8AF41B5E2C1A571B00ADF011 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8AF41B602C1A571F00ADF011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AF41B632C1A571F00ADF011 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8AF41B6D2C22340800ADF011 /* swiftui-tca-practice-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "swiftui-tca-practice-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 		8AF41B5B2C1A571B00ADF011 /* swiftui_tca_practice */ = {
 			isa = PBXGroup;
 			children = (
+				8AF41B6D2C22340800ADF011 /* swiftui-tca-practice-Info.plist */,
 				8AF41B5C2C1A571B00ADF011 /* swiftui_tca_practiceApp.swift */,
 				8AF41B5E2C1A571B00ADF011 /* ContentView.swift */,
 				8AF41B602C1A571F00ADF011 /* Assets.xcassets */,
@@ -283,6 +285,7 @@
 				DEVELOPMENT_TEAM = 827H72CABH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swiftui-tca-practice-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -312,6 +315,7 @@
 				DEVELOPMENT_TEAM = 827H72CABH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swiftui-tca-practice-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

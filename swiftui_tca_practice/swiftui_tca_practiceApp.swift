@@ -14,7 +14,10 @@ struct swiftui_tca_practiceApp: App {
         WindowGroup {
             ContentView(
                 store: Store(initialState: CounterFeature.State()) {
+                    // _printChangesでReducer が処理するすべてのアクションがコンソールに出力され、
+                    // アクションの処理後に状態がどのように変化したかが出力される
                     CounterFeature()
+                        ._printChanges()
                 }
             )
         }
