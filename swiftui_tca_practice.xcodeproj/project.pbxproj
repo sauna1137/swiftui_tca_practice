@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AEDAAC32C22DE8800485003 /* swiftui_tca_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEDAAC22C22DE8800485003 /* swiftui_tca_practiceTests.swift */; };
 		8AF41B5D2C1A571B00ADF011 /* swiftui_tca_practiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF41B5C2C1A571B00ADF011 /* swiftui_tca_practiceApp.swift */; };
 		8AF41B5F2C1A571B00ADF011 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF41B5E2C1A571B00ADF011 /* ContentView.swift */; };
 		8AF41B612C1A571F00ADF011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF41B602C1A571F00ADF011 /* Assets.xcassets */; };
@@ -14,7 +15,19 @@
 		8AF41B6C2C1B9F5000ADF011 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8AF41B6B2C1B9F5000ADF011 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8AEDAAC42C22DE8800485003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AF41B512C1A571B00ADF011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AF41B582C1A571B00ADF011;
+			remoteInfo = swiftui_tca_practice;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8AEDAAC02C22DE8800485003 /* swiftui_tca_practiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftui_tca_practiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AEDAAC22C22DE8800485003 /* swiftui_tca_practiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_tca_practiceTests.swift; sourceTree = "<group>"; };
 		8AF41B592C1A571B00ADF011 /* swiftui_tca_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftui_tca_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF41B5C2C1A571B00ADF011 /* swiftui_tca_practiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_tca_practiceApp.swift; sourceTree = "<group>"; };
 		8AF41B5E2C1A571B00ADF011 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +37,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8AEDAABD2C22DE8800485003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8AF41B562C1A571B00ADF011 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +55,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AEDAAC12C22DE8800485003 /* swiftui_tca_practiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				8AEDAAC22C22DE8800485003 /* swiftui_tca_practiceTests.swift */,
+			);
+			path = swiftui_tca_practiceTests;
+			sourceTree = "<group>";
+		};
 		8AF41B502C1A571B00ADF011 = {
 			isa = PBXGroup;
 			children = (
 				8AF41B5B2C1A571B00ADF011 /* swiftui_tca_practice */,
+				8AEDAAC12C22DE8800485003 /* swiftui_tca_practiceTests */,
 				8AF41B5A2C1A571B00ADF011 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				8AF41B592C1A571B00ADF011 /* swiftui_tca_practice.app */,
+				8AEDAAC02C22DE8800485003 /* swiftui_tca_practiceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +104,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8AEDAABF2C22DE8800485003 /* swiftui_tca_practiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AEDAAC62C22DE8800485003 /* Build configuration list for PBXNativeTarget "swiftui_tca_practiceTests" */;
+			buildPhases = (
+				8AEDAABC2C22DE8800485003 /* Sources */,
+				8AEDAABD2C22DE8800485003 /* Frameworks */,
+				8AEDAABE2C22DE8800485003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AEDAAC52C22DE8800485003 /* PBXTargetDependency */,
+			);
+			name = swiftui_tca_practiceTests;
+			productName = swiftui_tca_practiceTests;
+			productReference = 8AEDAAC02C22DE8800485003 /* swiftui_tca_practiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8AF41B582C1A571B00ADF011 /* swiftui_tca_practice */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AF41B672C1A571F00ADF011 /* Build configuration list for PBXNativeTarget "swiftui_tca_practice" */;
@@ -104,6 +152,10 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					8AEDAABF2C22DE8800485003 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 8AF41B582C1A571B00ADF011;
+					};
 					8AF41B582C1A571B00ADF011 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -126,11 +178,19 @@
 			projectRoot = "";
 			targets = (
 				8AF41B582C1A571B00ADF011 /* swiftui_tca_practice */,
+				8AEDAABF2C22DE8800485003 /* swiftui_tca_practiceTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8AEDAABE2C22DE8800485003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8AF41B572C1A571B00ADF011 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -143,6 +203,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8AEDAABC2C22DE8800485003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AEDAAC32C22DE8800485003 /* swiftui_tca_practiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8AF41B552C1A571B00ADF011 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,7 +222,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8AEDAAC52C22DE8800485003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AF41B582C1A571B00ADF011 /* swiftui_tca_practice */;
+			targetProxy = 8AEDAAC42C22DE8800485003 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		8AEDAAC72C22DE8800485003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 827H72CABH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.koichi.swiftui-tca-practiceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftui_tca_practice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swiftui_tca_practice";
+			};
+			name = Debug;
+		};
+		8AEDAAC82C22DE8800485003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 827H72CABH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.koichi.swiftui-tca-practiceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftui_tca_practice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swiftui_tca_practice";
+			};
+			name = Release;
+		};
 		8AF41B652C1A571F00ADF011 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -337,6 +449,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8AEDAAC62C22DE8800485003 /* Build configuration list for PBXNativeTarget "swiftui_tca_practiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AEDAAC72C22DE8800485003 /* Debug */,
+				8AEDAAC82C22DE8800485003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8AF41B542C1A571B00ADF011 /* Build configuration list for PBXProject "swiftui_tca_practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
