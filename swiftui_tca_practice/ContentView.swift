@@ -11,7 +11,7 @@ import ComposableArchitecture
 @Reducer
 struct CounterFeature {
     @ObservableState
-    struct State {
+    struct State: Equatable {
         var count = 0
         var fact: String?
         var isLoading = false
@@ -32,6 +32,8 @@ struct CounterFeature {
 
     // エフェクトのキャンセルに使用する
     enum CancelID { case timer }
+
+    @Dependency(\.continuousClock) var clock
 
     var body: some ReducerOf<Self> {
         Reduce { state, action in
