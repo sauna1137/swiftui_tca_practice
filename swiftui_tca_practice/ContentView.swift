@@ -148,8 +148,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(
-        store: Store(initialState: CounterFeature.State()) {
+    ContentView(store: Store(initialState: CounterFeature.State()) {
             CounterFeature()
         }
     )
