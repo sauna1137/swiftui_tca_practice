@@ -5,14 +5,34 @@
 //  Created by KS on 2024/09/18.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
-struct AddCountactFeature: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+@Reducer
+struct AddCountactFeature {
+    
+    @ObservableState
+    struct State: Equatable {
+        var contact: Contact
     }
-}
 
-#Preview {
-    AddCountactFeature()
+    enum Action {
+        case cancelButtonTapped
+        case saveButtonTapped
+        case setName(String)
+    }
+
+    var body: some ReducerOf<Self> {
+        Reduce { state, action in
+            switch action {
+            case .cancelButtonTapped:
+                return .none
+            case .saveButtonTapped:
+                return .none
+            case let .setName(name):
+                state.contact.name = name
+                return .none
+            }
+        }
+    }
 }

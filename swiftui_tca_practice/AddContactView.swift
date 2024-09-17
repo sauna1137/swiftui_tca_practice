@@ -5,14 +5,35 @@
 //  Created by KS on 2024/09/18.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
 struct AddContactView: View {
+    @Bindable var store: StoreOf<AddCountactFeature>
+
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            TextField("Name", text: $store.contact.name.sending(\.setName))
+            Button("Save") {
+                store.send(.saveButtonTapped)
+            }
+        }
+        .toolbar {
+            ToolbarItem {
+                Button("Cancel") {
+                    store.send(.cancelButtonTapped)
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    AddContactView()
+    NavigationStack {
+        AddContactView(store:
+                        Store(initialState: AddCountactFeature.State(contact: Contact(id: UUID(), name: "john"))) {
+            AddCountactFeature()
+        })
+    }
 }
