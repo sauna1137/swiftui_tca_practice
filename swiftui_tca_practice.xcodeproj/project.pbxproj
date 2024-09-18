@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A8EBBB12C93A394004708B5 /* ContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8EBBB02C93A394004708B5 /* ContactFeature.swift */; };
-		8AA5462E2C9A30390085D34D /* AddCountactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA5462D2C9A30390085D34D /* AddCountactFeature.swift */; };
+		8AA5462E2C9A30390085D34D /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA5462D2C9A30390085D34D /* AddContactFeature.swift */; };
 		8AA546302C9A32370085D34D /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA5462F2C9A32370085D34D /* AddContactView.swift */; };
 		8AEDAAC32C22DE8800485003 /* swiftui_tca_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEDAAC22C22DE8800485003 /* swiftui_tca_practiceTests.swift */; };
 		8AF41B5D2C1A571B00ADF011 /* swiftui_tca_practiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF41B5C2C1A571B00ADF011 /* swiftui_tca_practiceApp.swift */; };
@@ -30,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		8A8EBBB02C93A394004708B5 /* ContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFeature.swift; sourceTree = "<group>"; };
-		8AA5462D2C9A30390085D34D /* AddCountactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCountactFeature.swift; sourceTree = "<group>"; };
+		8AA5462D2C9A30390085D34D /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
 		8AA5462F2C9A32370085D34D /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
 		8AEDAAC02C22DE8800485003 /* swiftui_tca_practiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftui_tca_practiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AEDAAC22C22DE8800485003 /* swiftui_tca_practiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_tca_practiceTests.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				8AF41B5C2C1A571B00ADF011 /* swiftui_tca_practiceApp.swift */,
 				8AF41B5E2C1A571B00ADF011 /* ContentView.swift */,
 				8A8EBBB02C93A394004708B5 /* ContactFeature.swift */,
-				8AA5462D2C9A30390085D34D /* AddCountactFeature.swift */,
+				8AA5462D2C9A30390085D34D /* AddContactFeature.swift */,
 				8AA5462F2C9A32370085D34D /* AddContactView.swift */,
 				8AF41B602C1A571F00ADF011 /* Assets.xcassets */,
 				8AF41B622C1A571F00ADF011 /* Preview Content */,
@@ -226,7 +226,7 @@
 			files = (
 				8AF41B5F2C1A571B00ADF011 /* ContentView.swift in Sources */,
 				8AA546302C9A32370085D34D /* AddContactView.swift in Sources */,
-				8AA5462E2C9A30390085D34D /* AddCountactFeature.swift in Sources */,
+				8AA5462E2C9A30390085D34D /* AddContactFeature.swift in Sources */,
 				8AF41B5D2C1A571B00ADF011 /* swiftui_tca_practiceApp.swift in Sources */,
 				8A8EBBB12C93A394004708B5 /* ContactFeature.swift in Sources */,
 			);

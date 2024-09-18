@@ -9,7 +9,7 @@ import ComposableArchitecture
 import SwiftUI
 
 @Reducer
-struct AddCountactFeature {
+struct AddContactFeature {
     
     @ObservableState
     struct State: Equatable {

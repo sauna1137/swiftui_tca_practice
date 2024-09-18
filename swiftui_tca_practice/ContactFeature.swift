@@ -18,11 +18,13 @@ struct ContactsFeature {
 
     @ObservableState
     struct State: Equatable {
+        @Presents var addContact: AddContactFeature.State?
         var contacts: IdentifiedArrayOf<Contact> = []
     }
 
     enum Action {
         case addButtonTapped
+        case addContact(PresentationAction<AddContactFeature.Action>)
     }
 
     var body: some ReducerOf<Self> {
@@ -30,7 +32,12 @@ struct ContactsFeature {
             switch action {
             case .addButtonTapped:
                 return .none
+            case .addContact(_):
+                return .none
             }
+        }
+        .ifLet(\.$addContact, action: \.addContact) {
+          AddContactFeature()
         }
     }
 }

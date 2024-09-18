@@ -9,7 +9,7 @@ import ComposableArchitecture
 import SwiftUI
 
 struct AddContactView: View {
-    @Bindable var store: StoreOf<AddCountactFeature>
+    @Bindable var store: StoreOf<AddContactFeature>
 
 
     var body: some View {
@@ -32,8 +32,8 @@ struct AddContactView: View {
 #Preview {
     NavigationStack {
         AddContactView(store:
-                        Store(initialState: AddCountactFeature.State(contact: Contact(id: UUID(), name: "john"))) {
-            AddCountactFeature()
+                        Store(initialState: AddContactFeature.State(contact: Contact(id: UUID(), name: "john"))) {
+            AddContactFeature()
         })
     }
 }
