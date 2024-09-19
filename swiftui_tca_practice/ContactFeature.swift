@@ -31,19 +31,32 @@ struct ContactsFeature {
         Reduce { state, action in
             switch action {
             case .addButtonTapped:
+                state.addContact = AddContactFeature.State(contact:
+                                                            Contact(id: UUID(),name: "test user"))
                 return .none
+
+            case .addContact(.presented(.cancelButtonTapped)):
+                state.addContact = nil
+                return .none
+
+            case .addContact(.presented(.saveButtonTapped)):
+                guard let contact = state.addContact?.contact else { return .none }
+                state.contacts.append(contact)
+                state.addContact = nil
+                return .none
+
             case .addContact(_):
                 return .none
             }
         }
         .ifLet(\.$addContact, action: \.addContact) {
-          AddContactFeature()
+            AddContactFeature()
         }
     }
 }
 
 struct ContactsView: View {
-    let store: StoreOf<ContactsFeature>
+    @Bindable var store: StoreOf<ContactsFeature>
 
     var body: some View {
         NavigationStack {
@@ -61,6 +74,13 @@ struct ContactsView: View {
                         Image(systemName: "plus")
                     }
                 }
+            }
+        }
+        .sheet(
+            item: $store.scope(state: \.addContact, action: \.addContact)
+        ) { addContactStore in
+            NavigationStack {
+                AddContactView(store: addContactStore)
             }
         }
     }

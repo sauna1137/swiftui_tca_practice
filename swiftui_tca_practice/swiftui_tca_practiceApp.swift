@@ -12,12 +12,26 @@ import ComposableArchitecture
 struct swiftui_tca_practiceApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(
-                store: Store(initialState: CounterFeature.State()) {
-                    // _printChangesでReducer が処理するすべてのアクションがコンソールに出力され、
-                    // アクションの処理後に状態がどのように変化したかが出力される
-                    CounterFeature()
-                        ._printChanges()
+//            ContentView(
+//                store: Store(initialState: CounterFeature.State()) {
+//                    // _printChangesでReducer が処理するすべてのアクションがコンソールに出力され、
+//                    // アクションの処理後に状態がどのように変化したかが出力される
+//                    CounterFeature()
+//                        ._printChanges()
+//                }
+//            )
+
+            ContactsView(
+                store: Store(
+                    initialState: ContactsFeature.State(
+                        contacts: [
+                            Contact(id: UUID(), name: "Blob"),
+                            Contact(id: UUID(), name: "Blob Jr"),
+                            Contact(id: UUID(), name: "Blob Sr"),
+                        ]
+                    )
+                ) {
+                    ContactsFeature()
                 }
             )
         }
