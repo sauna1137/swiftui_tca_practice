@@ -35,14 +35,13 @@ struct ContactsFeature {
                                                             Contact(id: UUID(),name: "test user"))
                 return .none
 
-            case .addContact(.presented(.cancelButtonTapped)):
-                state.addContact = nil
-                return .none
+//            case .addContact(.presented(.delegate(.cancel))):
+//                state.addContact = nil
+//                return .none
 
-            case .addContact(.presented(.saveButtonTapped)):
-                guard let contact = state.addContact?.contact else { return .none }
+            case let .addContact(.presented(.delegate(.saveContact(contact)))):
                 state.contacts.append(contact)
-                state.addContact = nil
+//                state.addContact = nil
                 return .none
 
             case .addContact(_):
@@ -80,7 +79,7 @@ struct ContactsView: View {
             item: $store.scope(state: \.addContact, action: \.addContact)
         ) { addContactStore in
             NavigationStack {
-                AddContactView(store: addContactStore)
+                AddContactView(store: addContactStoreｗ)
             }
         }
     }
